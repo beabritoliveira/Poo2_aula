@@ -8,7 +8,7 @@ npm install typescript --save-dev
 npx tsc --init
 ------------------
 ## Formato do tsconfig.json recomendado, para configuração do typeScript: 
-  "compilerOptions": { 
+  {"compilerOptions": { 
     "target": "es2016",
     "module": "commonjs",
     "rootDir": "./src",
