@@ -3,7 +3,7 @@ npm init -y
 
 ## Instalar o typescript
 npm install typescript --save-dev
-##
+///
 npx tsc --init
 
 ## Formato do tsconfig.json recomendado, para configuração do typeScript: 
