@@ -19,14 +19,14 @@ class UserService {
 
     async findUser(id: number | undefined){
         try{
-            if(id){
+            if(id){ // Se o id existir ele vai achar o usuário que tem esse id
                 const user = prisma.user.findUnique({
                     where: {
                         id: id
                     }
                 })
                 return user;
-            } else {
+            } else { // Se não houver id ele vai listar todos os usuários
                 const user = await prisma.user.findMany();
                 return user;
             }
